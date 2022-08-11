@@ -1,7 +1,7 @@
 const https = require('https')
 module.exports.getHrefs = (mes = 'web') => {
     return new Promise((resolve, rejrct) => {
-        const req = https.request(`https://blog.csdn.net/nav/web`, async (res) => {
+        const req = https.request(`https://blog.csdn.net/nav/${mes}`, async (res) => {
             const chunks = []
             res.on('data', (chunk) => {
                 chunks.push(chunk)

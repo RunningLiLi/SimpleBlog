@@ -6,6 +6,10 @@ const Schema = new articleSchema({
 		type:String,
 		require:true
 	},
+	intro:{
+		type:String,
+		require:true
+	},
 	type:{
 		type:String,
 		require:true
@@ -15,7 +19,7 @@ const Schema = new articleSchema({
 		type:String,
 		require:true
 	},
-	nickname:{
+	nickName:{
 		type: String,
 		require: true 
 	},
