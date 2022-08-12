@@ -12,7 +12,7 @@ app.get('/getbodybyid/:id',(req,res)=>{
     })
 })
 app.get(`/:type`,(req,res)=>{
-    find({type:req.params.type},{},(err,ret)=>{
+    find({type:req.params.type},{body:0},(err,ret)=>{
         if(err)res.send(err)
         else{
             let arrRandom=[]
