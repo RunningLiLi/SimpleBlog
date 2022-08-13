@@ -1,4 +1,6 @@
-
+function getE(selecter){
+    return document.querySelector(selecter);
+}
 function throttle(fnc, time) {
     let flag = true
     return (path) => {
@@ -13,15 +15,15 @@ fetch(`http://127.0.0.1/getbodybyid/${location.search.replace(/\?id=/,'')}`)
 .then(res=>res.json())
 .then((res)=>{
     const {title,body,nickName,avatar,intro}=res
-    document.querySelector('.detail-title').innerHTML=title
-    document.querySelector('.datail-nickName').innerHTML=nickName
-    document.querySelector('.detail-intro').innerHTML=intro
-    document.querySelector('.detail-header img').src=avatar
-    document.querySelector('.detail-body').innerHTML=body
+    getE('.detail-title').innerHTML=title
+    getE('.datail-nickName').innerHTML=nickName
+    getE('.detail-intro').innerHTML=intro
+    getE('.detail-header img').src=avatar
+    getE('.detail-body').innerHTML=body
 })
 .then(()=>{
-    document.querySelectorAll("pre").forEach((v) => (v.className = "language-css"));
-    document.querySelectorAll("code").forEach((v) => (v.className = "language-css"));
+    // document.querySelectorAll("pre").forEach((v) => (v.className = "language-css"));
+    // document.querySelectorAll("code").forEach((v) => (v.className = "language-css"));
     const script=document.createElement('script')
     script.src='./codeheightlight/index.js'
     document.body.appendChild(script)
@@ -40,17 +42,14 @@ fetch(`http://127.0.0.1/getbodybyid/${location.search.replace(/\?id=/,'')}`)
     }, 0);
 })  
 ).then(()=>{
-    const catalogs=document.querySelector('.catalog').querySelectorAll('a')
-    const hs=document.querySelector('.detail-body').querySelectorAll('[catalog]')
+    const catalogs=getE('.catalog').querySelectorAll('a')
+    const hs=getE('.detail-body').querySelectorAll('[catalog]')
     let throttleScroll=throttle(()=>{
         hs.forEach((item,key)=>{
-            // v.offsetTop+125 <= window.pageYOffset &&
-            // this.catalogList[key + 1].offsetTop+125 >= window.pageYOffset
-            // console.log(item.offsetTop,window.pageYOffset)
             if(item.offsetTop-40<=window.pageYOffset && hs[key + 1].offsetTop>=window.pageYOffset){
                 catalogs.forEach(v=>v.classList.remove('heightlight'));
                 catalogs[key].classList.add('heightlight');
-                document.querySelector('.catalog').scrollTop=catalogs[key].offsetTop-150           }
+                getE('.catalog').scrollTop=catalogs[key].offsetTop-150           }
         })
     },200)
     document.addEventListener('scroll',()=>{

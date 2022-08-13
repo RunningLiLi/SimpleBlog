@@ -88,3 +88,9 @@ document.addEventListener('scroll',()=>{
 document.querySelector('.rollup').addEventListener('click',()=>{
     window.scrollTo(0,0)
 })
+document.querySelector('.changepage').addEventListener('click',()=>{
+    window.open('./createarticle/index.html')
+})
+document.querySelector('.mine').addEventListener('click',()=>{
+    window.open('./mine/index.html')
+})

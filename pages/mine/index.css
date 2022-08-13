@@ -7,7 +7,7 @@
 body{
     background-color: rgb(228, 228, 228);
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
     .one-nickName{
         display: none;
     }
@@ -21,31 +21,6 @@ body{
     height: auto;
     margin: 0 auto;
     background-color: white;
-}
-.show-nav ul{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    white-space: nowrap;
-    justify-content:space-around;
-    align-items: center;
-    background-color: white;
-}
-.show-nav li{
-    flex-grow:1; 
-    text-align: center;
-    line-height: 50px;
-    height: 100%;
-    width: auto;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.show-nav{
-    width: 100%;
-    height: 50px;
-    border-bottom: 1px solid rgb(231, 225, 173);
 }
 .show-body{
     width: 100%;
@@ -118,28 +93,4 @@ body{
     margin: auto;
     width: 30px;
     height: 30px;
-}
-.changepage{
-    position: fixed;
-    text-align: center;
-    line-height: 70px;
-    right:30px;
-    top: 30px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: 1px solid rgb(118, 233, 241);
-    background-color: white;
-}
-.mine{
-    position: fixed;
-    text-align: center;
-    line-height: 70px;
-    right:30px;
-    top: 100px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: 1px solid rgb(118, 233, 241);
-    background-color: white;
 }

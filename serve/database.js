@@ -25,7 +25,6 @@ const Schema = new articleSchema({
 	},
 	avatar:{
 		type: String,
-		require: true 
 	},
 	body:{
 		type: String,

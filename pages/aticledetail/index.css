@@ -118,6 +118,7 @@ body{
 .catalog{
     position: fixed;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgb(156, 156, 156);
     max-width: 200px;
     left: 20px;
     background-color: white;
@@ -138,5 +139,7 @@ body{
     color: rgb(49, 49, 49);
 }
 .heightlight{
-    color: red !important;
+    color: rgb(252, 85, 49) !important;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
 }

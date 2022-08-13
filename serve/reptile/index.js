@@ -6,6 +6,7 @@ const types = ['web', 'back-end', 'mobile', 'ai', 'product-ops', 'python']
 types.map(type => {
     getHrefs(type)
         .then((res) => {
+            console.log(res)
             async function test() {
                 let arr = []
                 for (let i = 0; i < res.length; i++) {
