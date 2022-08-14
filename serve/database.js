@@ -34,5 +34,5 @@ const Schema = new articleSchema({
 const simpleblog= mongoose.model('simpleblog', Schema);
 module.exports.Constructor= simpleblog;
 module.exports.remove=simpleblog.remove.bind(simpleblog);
-module.exports.update=simpleblog.findByIdAndUpdate.bind(simpleblog);
+module.exports.update=simpleblog.findOneAndUpdate.bind(simpleblog);
 module.exports.find=simpleblog.find.bind(simpleblog);
