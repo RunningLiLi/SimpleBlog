@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family:-apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial;
+}
+body{
+    background-color: rgb(228, 228, 228);
+}
+/* @media screen and (max-width: 1400px) {
+
+} */
+@media screen and (max-width: 1200px) {
+    .catalog{
+        display: none;
+    }
+
+}
+.detail-container{
+    margin:0 auto;
+    width: 60%;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+.detail-header{
+    position: relative;
+    width:100%;
+    top: 20px;
+    height:auto;
+}
+.detail-title{
+    display: block;
+    text-overflow: ellipsis;
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.detail-header img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.datail-nickName{
+    color: rgb(117, 117, 117);
+    line-height: 50px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.img-span{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    height: 50px;
+}
+.intro-container{
+    height: auto;
+    width: 90%;
+    padding-left: 5%;
+    margin: 50px auto;
+}
+.detail-intro{
+    letter-spacing: 0.1rem;
+    text-overflow: ellipsis;
+    white-space:pre-line;
+    overflow:hidden;
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+.detail-body{
+    height: auto;
+    width: 90%;
+    padding: 5%;
+    word-break: break-word;
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: #333;
+}
+.detail-body img{
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.toc ul{
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+    font-size: 16px;
+    font-variant-ligatures: no-common-ligatures;
+    font-weight: 400;
+    line-height: 24px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    outline-color: rgba(0, 0, 0, 0.75);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-wrap: break-word;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0px;
+    padding-left: 10px !important;
+    padding-right: 0px;
+    padding-top: 0px;
+    tab-size: 4;
+    word-break: break-word
+}
+.catalog{
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(156, 156, 156);
+    max-width: 200px;
+    left: 20px;
+    background-color: white;
+    top: 200px;
+    max-height: 300px;
+    font-size: 20px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.catalog a{
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+.heightlight{
+    color: rgb(252, 85, 49) !important;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+}
